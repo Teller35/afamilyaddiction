@@ -1,17 +1,27 @@
-
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
+import NavLink from "../Nav";
+import LandingPage from "../../pages/LandingPage";
+// import Contact from "./pages/ContactPage";
+// import AboutMe from "./pages/AboutPage"
+import Footer from "../Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
 
-      </header>
-    </div>
-  );
+    return(
+        <Router>
+            <div>
+                <NavLink />
+                    <Route exact path="/" component={LandingPage} />
+                    {/* <Route exact path="/contact" component={Contact} /> */}
+                    {/* <Route exact path="/about" component={AboutMe} /> */}
+            </div>
+            <div>
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
 export default App;

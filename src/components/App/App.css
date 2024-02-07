@@ -1,38 +1,268 @@
-.App {
+:root {
+  --primary-color : #D9B29C;
+  --secondary-color: #A86326;
+  --tertiary-color: #8D9365;
+  --quaternary-color: #574301;
+}
+
+* {
+  background-color: var(--primary-color);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.FaceBook {
+  color: #4267B2;
+}
+
+.TikTok {
+  color: #000000;
+}
+
+.YouTube {
+  color: #FF0000;
+}
+
+.fontColor {
+  color:var(--secondary-color);
+  text-decoration: none;
+}
+
+.TwoFontColor {
+  color: var(--quaternary-color);
+  text-decoration: underline;
+}
+
+.Center {
+  text-align: center;
+  color: var(--quaternary-color);
+}
+
+.TextIndent {
+  text-indent: 50px;
+}
+
+
+/* Nav Styling */
+.NavLink {
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.SecNavLink {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: .3vw;
+}
+
+/* Footer Styling */
+
+footer {
+  margin-top: 5vh;
+  height: 24vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+footer h4 {
+  display: flex;
+  justify-content: center;
+  padding-top: 2vw;
+}
+
+.footerArea {
+  display: flex;
+  justify-content: center;
+  padding-top: 1vw;
+  color: var(--quaternary-color);
+}
+
+.developerStyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 35%;
+}
+
+/* landing page card styling */
+.Card {
+  width: 70rem;
+  margin: auto;
+}
+
+.CardBodyStyle {
+  font-size: 1.8rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 40px var(--quaternary-color);
+  border: 5px solid var(--tertiary-color);
+  border-radius: 1px;
+  opacity: 0.7;
+}
+
+.CardImage {
+  height: 30rem;
+  width: 30rem;
+  margin-left: 54vh;
+  padding: 3vw;
+}
+
+
+/* Disclaimer Styling */
+
+.DiscStyle {
+text-align: center;
+padding-left: 10vw;
+padding-right: 10vw;
+padding-top: 5vw;
+font-size: .65rem;
+color: grey;
+}
+
+/* Contact card styling */
+
+.CardContact {
+  font-size: 1.8rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 40px var(--quaternary-color);
+  border: 10px solid var(--tertiary-color);
+  border-radius: 1px;
+  opacity: 0.7;
+}
+
+.AlertCard {
+  font-size: 1.8rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 40px var(--quaternary-color);
+  border: 10px solid var(--tertiary-color);
+  border-radius: 1px;
+  opacity: 0.7;
+}
+
+.AlertCardHead {
+  font-size: 3.0rem;
+  color: var(--quaternary-color);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AlertCardBody {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.MyButton {
+  float: right;
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 7px;
+  border: 5px solid var(--tertiary-color);
+}
+
+@media screen and (max-width: 1050px) {
+  .Center {
+    justify-content: center;
+    font-size: 3vw; 
+  } 
+
+  .Card {
+    width: 50rem;
+    margin: auto;
   }
+
+  .DiscStyle {
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 3vw;
+    font-size: .55rem;
+    color: grey;
+    }
+
+    .CardImage {
+      height: 25rem;
+      width: 20rem;
+      margin-left: 30vw;
+      padding: 3vw;
+    }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media screen and (max-width: 950px) {
+  .Center {
+    justify-content: center;
+    font-size: 3vw; 
+  } 
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .Card {
+    width: 45rem;
+    margin: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .DiscStyle {
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 3vw;
+    font-size: .55rem;
+    color: grey;
+    }
+
+    .CardImage {
+      height: 25rem;
+      width: 20rem;
+      margin-left: 25vw;
+      padding: 3vw;
+    }
+
+}
+@media screen and (max-width: 577px) {
+
+  .NavLink, .SecNavLink {
+    font-size: 1rem;
   }
+
+  .Center {
+    justify-content: center;
+    font-size: 5vw; 
+  } 
+
+  .Card {
+    width: 20rem;
+    margin: auto;
+  }
+  .CardBodyStyle {
+    font-size: .8rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 40px var(--quaternary-color);
+    border: 5px solid var(--tertiary-color);
+    border-radius: 1px;
+    opacity: 0.7;
+  }
+
+  .DiscStyle {
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 3vw;
+    font-size: .55rem;
+    color: grey;
+    }
+
+    .CardImage {
+      height: 15rem;
+      width: 12rem;
+      margin-left: 25vw;
+      padding: 3vw;
+    }
+
 }
