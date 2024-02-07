@@ -4,7 +4,7 @@ import "./App.css";
 import NavLink from "../Nav";
 import LandingPage from "../../pages/LandingPage";
 import Contact from "../../pages/ContactPage";
-// import AboutMe from "./pages/AboutPage"
+import AboutMe from "../../pages/AboutPage"
 import Footer from "../Footer";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
                 <NavLink />
                     <Route exact path="/" component={LandingPage} />
                     <Route exact path="/contact" component={Contact} />
-                    {/* <Route exact path="/about" component={AboutMe} /> */}
+                    <Route exact path="/about" component={AboutMe} />
             </div>
             <div>
                 <Footer />
