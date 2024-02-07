@@ -12,9 +12,9 @@ function NavLink() {
             <Container>
                 <Navbar.Brand></Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link href="/A-Family-Addiction" className="NavLink">Mission</Nav.Link>
-                    <Nav.Link href="/A-Family-Addiction/contact" className="NavLink">Contact</Nav.Link>
-                    <Nav.Link href="/A-Family-Addiction/about" className="NavLink">About</Nav.Link>
+                    <Nav.Link href="/" className="NavLink">Mission</Nav.Link>
+                    <Nav.Link href="/contact" className="NavLink">Contact</Nav.Link>
+                    <Nav.Link href="/about" className="NavLink">About</Nav.Link>
                 </Nav>
                     <Navbar>
                             <a 
